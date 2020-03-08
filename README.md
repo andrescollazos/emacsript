@@ -1,0 +1,3 @@
+# REPOSITORIO PARA LA FUNDAMENTACIÓN EN EMACSCRIPT
+
+Se presentan algunos ejemplos
