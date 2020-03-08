@@ -35,7 +35,7 @@ console.log(epicPhrase)
 // --------------------------------------------------------------------------------
 // MULTILINEA
 
-// Forma tradicional
+// tradicional
 let lorem = 'Adipisicing esse labore elit officia Lorem sint voluptate. \n'
 +  'Ut ipsum officia anim qui excepteur Lorem tempor dolor anim velit nostrud.'
 
@@ -74,4 +74,36 @@ let education = ['Roberto', ...team1, ...team2]
 
 console.log(education)
 
+// --------------------------------------------------------------------------------
+// PROPIEDAD DE OBJETOS: ASIGNACIÓN
 
+let name = 'Andres'
+let edad = 25
+
+// ES5
+obj = {name: name, edad: edad}
+
+// ES6
+obj2 = {name, edad}
+
+// --------------------------------------------------------------------------------
+// ARROW FUNCTIONS
+
+const names = [
+    {name: 'Felipe', edad: 25},
+    {name: 'Andres', edad: 26}
+]
+
+let listOfNames = names.map(function (item) {
+    console.log(item.name)
+})
+
+let listOfNames2 = names.map( item => console.log(item.name))
+
+const listOfNames3 = (name, ages, country) => {
+    console.log(name)
+}
+listOfNames3('Felipe', 23, 'CO')
+
+const square = num => num * num
+console.log(square(2))
