@@ -107,3 +107,60 @@ listOfNames3('Felipe', 23, 'CO')
 
 const square = num => num * num
 console.log(square(2))
+
+// --------------------------------------------------------------------------------
+// CLASES
+
+class Calculator {
+    constructor() {
+        this.valueA = 0
+        this.valueB = 0
+    }
+
+    sumar (valueA, valueB) {
+        return valueA + valueB
+    }
+    
+    restar (valueA, valueB) {
+        return valueA - valueB
+    }
+
+    multiplicar (valueA, valueB) {
+        return valueA * valueB
+    }
+
+    dividir (valueA, valueB) {
+        return valueA / valueB
+    }
+}
+
+const calc = new Calculator()
+console.log(calc.sumar(3, 4))
+console.log(calc.restar(3, 4))
+console.log(calc.multiplicar(3, 4))
+console.log(calc.dividir(12, 4))
+
+
+// --------------------------------------------------------------------------------
+// MODULOS
+
+import { hello } from './module'
+console.log(hello())
+
+// --------------------------------------------------------------------------------
+// GENERADORES
+
+function* helloWorld() {
+    if (true) {
+        yield 'Hello, '
+    }
+
+    if (true) {
+        yield 'World'
+    }
+}
+
+const generatorHello = helloWorld()
+console.log(generatorHello.next().value)
+console.log(generatorHello.next().value)
+console.log(generatorHello.next().value)
